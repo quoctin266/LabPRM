@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#9436FF"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Linear Layout"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="#FFE81A"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Android"
+        android:textColor="#F41818"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="#2AB9FB"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="PHP"
+        android:textColor="#9F0000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:background="#009688"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="SQL"
+        android:textColor="#FFF200"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FF9800"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="PYTHON"
+        android:textColor="#009688"
+        android:textSize="24sp" />
+</LinearLayout>
