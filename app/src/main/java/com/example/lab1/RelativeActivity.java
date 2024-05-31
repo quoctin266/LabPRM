@@ -1,6 +1,7 @@
 package com.example.lab1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -35,6 +36,13 @@ public class RelativeActivity extends AppCompatActivity {
         signupText = findViewById(R.id.signupText);
         emailPhone = findViewById(R.id.emailPhone);
         password = findViewById(R.id.password);
+
+        SharedPreferences sharedPreferences = getSharedPreferences("loginInfo", MODE_PRIVATE);
+        String emailPhoneSignUp = sharedPreferences.getString("emailPhone", "");
+        String passwordSignUp = sharedPreferences.getString("password", "");
+
+        emailPhone.setText(emailPhoneSignUp);
+        password.setText(passwordSignUp);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,6 +1,7 @@
 package com.example.lab1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -43,7 +44,14 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!checkInput()) return;
-                startActivity(new Intent(SignupActivity.this, CalculatorActivity.class));
+
+                SharedPreferences sharedPreferences = getSharedPreferences("loginInfo", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("emailPhone", emailPhone.getText().toString());
+                editor.putString("password", password.getText().toString());
+                editor.apply();
+
+                startActivity(new Intent(SignupActivity.this, RelativeActivity.class));
             }
         });
 
