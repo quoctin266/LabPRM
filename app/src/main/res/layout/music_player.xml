@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoWave"
+            android:layout_width="match_parent"
+            android:layout_height="219dp" />
+
+        <Button
+            android:id="@+id/playPauseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="#2196F3"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="10dp"
+            android:background="#2196F3"
+            android:text="Stop"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
